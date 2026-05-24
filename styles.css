@@ -383,7 +383,7 @@ body{font-family:'Nunito',sans-serif;background:var(--deep);color:#fff;overflow-
 /* Mobile responsive overrides */
 @media(max-width:768px){
   .pilot-scene{width:90px;
-    bottom:50px;
+    bottom: 20px;
     right:8px;
   }
   .pilot-svg-el{width:88px}
