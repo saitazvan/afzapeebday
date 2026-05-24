@@ -94,7 +94,7 @@ body{font-family:'Nunito',sans-serif;background:var(--deep);color:#fff;overflow-
    HERO
 ═══════════════════════════════════════════════════ */
 #hero{
-  position:relative;min-height:100svh;width:100%;
+  position:relative;min-height:100dvh;width:100%;
   display:flex;align-items:center;justify-content:center;
   overflow:hidden;
   background:radial-gradient(ellipse at 55% 35%,#280860,#140530 50%,#07011a);
@@ -118,6 +118,12 @@ body{font-family:'Nunito',sans-serif;background:var(--deep);color:#fff;overflow-
 
 /* bg drifting clouds */
 .bgcld{position:absolute;pointer-events:none;animation:bgcd var(--ct,22s) linear var(--cds,-5s) infinite;opacity:var(--co,.08)}
+@media(max-width:768px){
+  .bgcld{
+    transform:scale(.72);
+    opacity:.06;
+  }
+}
 @keyframes bgcd{0%{transform:translateX(-380px)}100%{transform:translateX(calc(100vw + 380px))}}
 
 /* ─── HERO LAYOUT: title perfectly centred, pilot is an overlay ─── */
@@ -137,7 +143,18 @@ body{font-family:'Nunito',sans-serif;background:var(--deep);color:#fff;overflow-
   width:100%;
 }
 @media(max-width:768px){
-  .hero-layout{align-items:flex-start;padding-top:clamp(9rem,31svh,13.5rem);padding-bottom:6rem}
+  .hero-layout{
+    align-items:center;
+    justify-content:center;
+
+    min-height:100dvh;
+
+    padding-top:5.5rem;
+    padding-bottom:4rem;
+
+    padding-left:1rem;
+    padding-right:1rem;
+  }
   .hcenter{padding:0 .75rem}
   .htcake-wrap{margin-top:clamp(.75rem,3vw,1rem)}
   .hbadge{font-size:.6rem;letter-spacing:1.4px}
@@ -211,7 +228,7 @@ body{font-family:'Nunito',sans-serif;background:var(--deep);color:#fff;overflow-
 }
 /* Line 2: "Afzapeee" — taller line-height for descenders */
 .htl2{
-  font-size:clamp(4.2rem,13vw,8.5rem);
+  font-size:clamp(3.4rem,11vw,8.5rem);
   line-height:1.38;
   letter-spacing:.01em;
   filter:
@@ -365,18 +382,21 @@ body{font-family:'Nunito',sans-serif;background:var(--deep);color:#fff;overflow-
 
 /* Mobile responsive overrides */
 @media(max-width:768px){
-  .pilot-scene{right:.5rem;bottom:3.2rem}
+  .pilot-scene{width:90px;
+    bottom:50px;
+    right:8px;
+  }
   .pilot-svg-el{width:88px}
   .thought-cloud-wrap{
     bottom:calc(100% - 38px);
-    right:6px;
+    right:40px;
   }
   .tc-text{width:115px;font-size:.61rem}
 }
 @media(max-width:420px){
-  .pilot-scene{right:.35rem;bottom:3rem}
+  .pilot-scene{right:.35rem;bottom:1.6rem}
   .pilot-svg-el{width:72px}
-  .thought-cloud-wrap{display:none}
+  .thought-cloud-wrap{right: 30px;}
   .scrlcue{bottom:1rem;font-size:.57rem}
 }
 
