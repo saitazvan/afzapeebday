@@ -138,7 +138,7 @@ body{font-family:'Nunito',sans-serif;background:var(--deep);color:#fff;overflow-
 }
 @media(max-width:768px){
   .hero-layout{align-items:flex-start;padding-top:clamp(9rem,31svh,13.5rem);padding-bottom:6rem}
-  .hcenter{padding:0 .75rem}
+  .hcenter{padding:0 .75rem; bottom: 20px;}
   .htcake-wrap{margin-top:clamp(.75rem,3vw,1rem)}
   .hbadge{font-size:.6rem;letter-spacing:1.4px}
   .hsub{font-size:.66rem;letter-spacing:2.3px}

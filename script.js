@@ -229,9 +229,9 @@ const CLOUDS=[
   {l:"Chaotic",e:"🌪️",id:"chaotic",src:"images/chaotic.JPG",dur:"6.1s",del:"0.5s"},
   {l:"Cool",e:"😎",id:"cool",src:"images/cool.JPG",dur:"4.8s",del:"1s"},
   {l:"Dreamy",e:"🍁",id:"dreamy",src:"images/dreamy.JPG",dur:"7s",del:"0.25s"},
-  {l:"Goofy",e:"😂",id:"goofy",src:"images/goofy.JPG",dur:"5.6s",del:"0.75s"},
+  {l:"Stargirl",e:"🌟",id:"stargirl",src:"images/stargirl.JPG",dur:"5.6s",del:"0.75s"},
   {l:"Glowing",e:"💫",id:"glowing",src:"images/glowing.JPG",dur:"6.4s",del:"0.15s"},
-  {l:"Brave",e:"🦋",id:"brave",src:"images/brave.JPG",dur:"4.9s",del:"0.6s"},
+  {l:"Angel",e:"👼",id:"angel",src:"images/angel.JPG",dur:"4.9s",del:"0.6s"},
   {l:"Adorable",e:"🌸",id:"adorable",src:"images/adorable.JPG",dur:"5.8s",del:"0.35s"},
 ];
 let curC=null;
